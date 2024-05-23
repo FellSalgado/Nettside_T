@@ -1,0 +1,127 @@
+/* Estilo para cuando el encabezado está en la parte superior */
+.header-top {
+    background-color: rgba(0,0,0,0);
+    padding-block: 2.5rem;
+    transition: all .4s ease-in-out
+}
+
+/* Estilo para cuando el encabezado se desplaza hacia abajo */
+.header-scrolled {
+    background-color: rgba(255, 255, 255, 0.897);
+    backdrop-filter: saturate(1.8) blur(20px);
+    padding-block: 1.2rem;
+    transition: all .4s ease-in-out
+}
+
+.header-scrolled .ul-items a {
+    color: black;
+}
+
+.icon {
+    width: 2.5rem;
+}
+
+
+.svg-icons-footer {
+    width: 2.8rem;
+}
+.iconos_redes{
+    align-items: center;
+}
+.twitter {
+    filter: invert(100%);
+}
+
+/* menu hamburguesa */
+.menu-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .bar.open-1 {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  .bar.open-2 {
+    opacity: 0;
+  }
+
+  .bar.open-3 {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  .menu {
+    display: none;
+    transition: 0.4s;
+    /* Estilos del menú */
+  }
+
+.menu.active{
+  display: none;
+}
+
+@media (max-width:768px) {
+  .menu-btn{
+    display: flex !important;
+  }
+  .navbar_comput{
+    display: none !important;
+  }
+  .navbar_mobile{
+    flex-direction: column;
+    color: #fff !important;
+   /*  align-items: flex-start !important; */
+  }
+  .menu.active {
+    display: flex;
+    background: #000000e8;
+    width: 100%;
+    height: auto;
+    padding: 40px 100px 10px 100px;
+    border-radius: 5px;
+  }
+}
+.enlace_mobile{
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+}
+.menu-btn{
+  position: fixed;
+  right: 15px;
+  display: none;
+  z-index: 2;
+}
+
+.icon-guion {
+    width: 40px;
+    height: 40px;
+}
+.bar.scrolled {
+  background-color: #000;
+}
+.bar.x-color {
+  background-color: #fff;
+}
+
+.Videofondo {
+  content: "";
+  position: absolute;
+  background: linear-gradient(297deg, rgba(16, 7, 28, 0.13) 0%, rgba(16, 7, 39, 0.87) 52%, rgb(16, 7, 39) 100%);
+  inset: 0px;
+}

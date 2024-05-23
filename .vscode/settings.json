@@ -1,0 +1,9 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.experimental.classRegex": [],
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript",
+        "css": "css"
+    }
+}

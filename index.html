@@ -7,6 +7,7 @@
     <title>Nettside</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -68,10 +69,12 @@
                     <nav aria-label="Global" class="hidden md:block">
                         <ul class="ul-items flex items-center gap-8 text-sm navbar_comput">
                             <li>
-                                <a class="text-gray-200 transition" href="sobre_nosotros"> Sobre Nosotros </a>
+                                <a class="text-gray-200 transition" href="#sobre_nosotros"> Sobre Nosotros
+                                </a>
                             </li>
                             <li>
-                                <a class="text-gray-200 transition" href="#servicios"> Nuestros Servicios </a>
+                                <a class="text-gray-200 transition" href="#servicios"> Nuestros Servicios
+                                </a>
                             </li>
                             <li>
                                 <a class="text-gray-200 transition" href="#"> Proyectos </a>
@@ -153,7 +156,7 @@
 
 
     <!---- SOBRE NOSOTROS ---->
-    <div class="relative isolate overflow-hidden bg-white px-6 pt-24 pb-12 sm:pt-32 lg:overflow-visible lg:px-8"
+    <section class="relative isolate overflow-hidden bg-white px-6 pt-24 pb-12 sm:pt-32 lg:overflow-visible lg:px-8"
         id="sobre_nosotros">
         <div class=" absolute inset-0 -z-10 overflow-hidden">
             <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -176,9 +179,10 @@
             class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
             <div
                 class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div class="lg:pr-4" s>
-                    <div class="lg:max-w-lg">
-                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sobre Nosotros
+                <div class="lg:pr-4">
+                    <div class="lg:max-w-lg" data-aos="fade-up" data-aos-duration="800">
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            Sobre Nosotros
                         </h1>
                         <p class="mt-6 text-xl leading-8 text-gray-700">Como empresa de desarrollo de software y socio
                             digital, ofrecemos soluciones de alta calidad que abarcan todo el ciclo de desarrollo. Desde
@@ -190,153 +194,154 @@
             </div>
             <div
                 class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <iframe width="100%" height="298" src="https://www.youtube.com/embed/SGKLltiokSM?si=7TGFzoTYnXA7oTZ-"
+                <!-- <iframe width="100%" height="298" src="https://www.youtube.com/embed/SGKLltiokSM?si=7TGFzoTYnXA7oTZ-"
                     title="YouTube video player" frameborder="2rem"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                    <li class="flex gap-x-3" data-aos="fade-up">
+                        <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #5CD6ff;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #58ade3;
+                                    }
+
+                                    .cls-3 {
+                                        fill: #eb3375;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Capa_2" data-name="Capa 2">
+                                <g id="Capa_1-2" data-name="Capa 1">
+                                    <path class="cls-1"
+                                        d="M119.34,115.85a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69L14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.82,27.82,0,0,0,14.72-4L56,161.45l78.84-49.06a30.28,30.28,0,0,0,14.58-25.07,32.63,32.63,0,0,1-3.8,13.75C140.68,110.5,129.91,115.85,119.34,115.85Z" />
+                                    <path class="cls-2"
+                                        d="M134.89,60,56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.35,32.35,0,0,1,3.82,16A30.29,30.29,0,0,0,134.89,60Z" />
+                                    <path class="cls-3"
+                                        d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.63,32.63,0,0,0,3.8-13.75,32.35,32.35,0,0,0-3.82-16C140.66,61.92,129.89,56.56,119.32,56.56Z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span><strong class=" font-semibold text-gray-900" id="empresa">Diseño Web
+                                Innovador:</strong>
+                            Desarrollamos sitios web estaticos, dinamicos, visualmente atractivos y funcionales
+                            que reflejan la
+                            identidad única de cada cliente.
+                            .</span>
+                    </li>
+                    <li class="flex gap-x-3" data-aos="fade-up" data-aos-duration="1000">
+                        <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
+                            <defs>
+                                <style>
+                                    .cls-4 {
+                                        fill: #335cff;
+                                    }
+
+                                    .cls-5 {
+                                        fill: #333dfd;
+                                    }
+
+                                    .cls-6 {
+                                        fill: #ff67f7;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Capa_2" data-name="Capa 2">
+                                <g id="Capa_1-2" data-name="Capa 1">
+                                    <path class="cls-4"
+                                        d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.3,30.3,0,0,0,14.58-25.07,32.67,32.67,0,0,1-3.8,13.75c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
+                                    <path class="cls-5"
+                                        d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.3,32.3,0,0,1,3.82,16A30.29,30.29,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
+                                    <path class="cls-6"
+                                        d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.67,32.67,0,0,0,3.8-13.75,32.3,32.3,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900" id="aplicaciones">Desarrollo de
+                                Aplicaciones
+                                Personalizadas:</strong>Desde aplicaciones empresariales hasta soluciones
+                            móviles,
+                            nos comprometemos a ofrecer soluciones tecnológicas a medida.</span>
+                    </li>
+                    <li class="flex gap-x-3" data-aos="fade-up" data-aos-duration="2000">
+                        <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
+                            <defs>
+                                <style>
+                                    .cls-7 {
+                                        fill: #335cff;
+                                    }
+
+                                    .cls-8 {
+                                        fill: #2f32e3;
+                                    }
+
+                                    .cls-9 {
+                                        fill: #eb3375;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Capa_2" data-name="Capa 2">
+                                <g id="Capa_1-2" data-name="Capa 1">
+                                    <path class="cls-7"
+                                        d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.28,30.28,0,0,0,14.58-25.06,32.59,32.59,0,0,1-3.8,13.74c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
+                                    <path class="cls-9"
+                                        d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.36,32.36,0,0,1,3.82,16A30.28,30.28,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
+                                    <path class="cls-8"
+                                        d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.59,32.59,0,0,0,3.8-13.74,32.36,32.36,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Automatización de Procesos
+                                Empresariales:</strong> Desde flujos de trabajo internos hasta la
+                            integración de sistemas, trabajamos para mejorar la eficiencia operativa de nuestros
+                            clientes.</span>
+                    </li>
+                    <li class="flex gap-x-3" data-aos="fade-up" data-aos-duration="3000">
+                        <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
+                            <defs>
+                                <style>
+                                    .cls-10 {
+                                        fill: #5CD6ff;
+                                    }
+
+                                    .cls-11 {
+                                        fill: #32b5ff;
+                                    }
+
+                                    .cls-12 {
+                                        fill: #335cff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Capa_2" data-name="Capa 2">
+                                <g id="Capa_1-2" data-name="Capa 1">
+                                    <path class="cls-10"
+                                        d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.3,30.3,0,0,0,14.58-25.07,32.67,32.67,0,0,1-3.8,13.75c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
+                                    <path class="cls-11"
+                                        d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.3,32.3,0,0,1,3.82,16A30.29,30.29,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
+                                    <path class="cls-12"
+                                        d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.67,32.67,0,0,0,3.8-13.75,32.3,32.3,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
+                                </g>
+                            </g>
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900" id="diseño_web">Estrategias de
+                                Comercio
+                                Electrónico:</strong>Ofrecemos soluciones completas de comercio electrónico,
+                            desde el diseño de tiendas en línea hasta la implementación de estrategias de venta
+                            efectivas. </span>
+                    </li>
+                </ul>
             </div>
             <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
                 id="servicios">
                 <div class="lg:pr-4">
-                    <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                        <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                            <li class="flex gap-x-3">
-                                <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: #5CD6ff;
-                                            }
-
-                                            .cls-2 {
-                                                fill: #58ade3;
-                                            }
-
-                                            .cls-3 {
-                                                fill: #eb3375;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <g id="Capa_2" data-name="Capa 2">
-                                        <g id="Capa_1-2" data-name="Capa 1">
-                                            <path class="cls-1"
-                                                d="M119.34,115.85a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69L14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.82,27.82,0,0,0,14.72-4L56,161.45l78.84-49.06a30.28,30.28,0,0,0,14.58-25.07,32.63,32.63,0,0,1-3.8,13.75C140.68,110.5,129.91,115.85,119.34,115.85Z" />
-                                            <path class="cls-2"
-                                                d="M134.89,60,56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.35,32.35,0,0,1,3.82,16A30.29,30.29,0,0,0,134.89,60Z" />
-                                            <path class="cls-3"
-                                                d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.63,32.63,0,0,0,3.8-13.75,32.35,32.35,0,0,0-3.82-16C140.66,61.92,129.89,56.56,119.32,56.56Z" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span><strong class="font-semibold text-gray-900" id="empresa">Diseño Web
-                                        Innovador:</strong>
-                                    Desarrollamos sitios web estaticos, dinamicos, visualmente atractivos y funcionales
-                                    que reflejan la
-                                    identidad única de cada cliente.
-                                    .</span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
-                                    <defs>
-                                        <style>
-                                            .cls-4 {
-                                                fill: #335cff;
-                                            }
-
-                                            .cls-5 {
-                                                fill: #333dfd;
-                                            }
-
-                                            .cls-6 {
-                                                fill: #ff67f7;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <g id="Capa_2" data-name="Capa 2">
-                                        <g id="Capa_1-2" data-name="Capa 1">
-                                            <path class="cls-4"
-                                                d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.3,30.3,0,0,0,14.58-25.07,32.67,32.67,0,0,1-3.8,13.75c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
-                                            <path class="cls-5"
-                                                d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.3,32.3,0,0,1,3.82,16A30.29,30.29,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
-                                            <path class="cls-6"
-                                                d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.67,32.67,0,0,0,3.8-13.75,32.3,32.3,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span><strong class="font-semibold text-gray-900" id="aplicaciones">Desarrollo de
-                                        Aplicaciones
-                                        Personalizadas:</strong>Desde aplicaciones empresariales hasta soluciones
-                                    móviles,
-                                    nos comprometemos a ofrecer soluciones tecnológicas a medida.</span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
-                                    <defs>
-                                        <style>
-                                            .cls-7 {
-                                                fill: #335cff;
-                                            }
-
-                                            .cls-8 {
-                                                fill: #2f32e3;
-                                            }
-
-                                            .cls-9 {
-                                                fill: #eb3375;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <g id="Capa_2" data-name="Capa 2">
-                                        <g id="Capa_1-2" data-name="Capa 1">
-                                            <path class="cls-7"
-                                                d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.28,30.28,0,0,0,14.58-25.06,32.59,32.59,0,0,1-3.8,13.74c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
-                                            <path class="cls-9"
-                                                d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.36,32.36,0,0,1,3.82,16A30.28,30.28,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
-                                            <path class="cls-8"
-                                                d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.59,32.59,0,0,0,3.8-13.74,32.36,32.36,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span><strong class="font-semibold text-gray-900">Automatización de Procesos
-                                        Empresariales:</strong> Desde flujos de trabajo internos hasta la
-                                    integración de sistemas, trabajamos para mejorar la eficiencia operativa de nuestros
-                                    clientes.</span>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg class="icon-guion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.49 172.41">
-                                    <defs>
-                                        <style>
-                                            .cls-10 {
-                                                fill: #5CD6ff;
-                                            }
-
-                                            .cls-11 {
-                                                fill: #32b5ff;
-                                            }
-
-                                            .cls-12 {
-                                                fill: #335cff;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <g id="Capa_2" data-name="Capa 2">
-                                        <g id="Capa_1-2" data-name="Capa 1">
-                                            <path class="cls-10"
-                                                d="M63.42,86.2,14.59,116.58C.35,125.45-3.94,142.92,3.83,157.63c5,9.43,15.74,14.78,26.32,14.78a27.88,27.88,0,0,0,14.73-4L56,161.45l78.84-49.06a30.3,30.3,0,0,0,14.58-25.07,32.67,32.67,0,0,1-3.8,13.75c-5,9.43-15.75,14.78-26.32,14.78a27.85,27.85,0,0,1-14.73-4l-11.16-6.94-30-18.69" />
-                                            <path class="cls-11"
-                                                d="M30.17,0C19.59,0,8.83,5.36,3.85,14.79-3.92,29.5.37,47,14.61,55.83L63.42,86.2l30-18.67,11.16-7a27.85,27.85,0,0,1,14.73-4c10.57,0,21.34,5.36,26.32,14.79a32.3,32.3,0,0,1,3.82,16A30.29,30.29,0,0,0,134.9,60L56.06,11,44.9,4A27.88,27.88,0,0,0,30.17,0" />
-                                            <path class="cls-12"
-                                                d="M119.32,56.56a27.85,27.85,0,0,0-14.73,4l-11.16,7-30,18.67,30,18.69,11.16,6.94a27.85,27.85,0,0,0,14.73,4c10.57,0,21.34-5.35,26.32-14.78a32.67,32.67,0,0,0,3.8-13.75,32.3,32.3,0,0,0-3.82-16c-5-9.43-15.75-14.79-26.32-14.79" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span><strong class="font-semibold text-gray-900" id="diseño_web">Estrategias de
-                                        Comercio
-                                        Electrónico:</strong>Ofrecemos soluciones completas de comercio electrónico,
-                                    desde el diseño de tiendas en línea hasta la implementación de estrategias de venta
-                                    efectivas. </span>
-                            </li>
-                        </ul>
+                    <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg" data-aos="fade-up"
+                        data-aos-duration="800">
                         <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Consultoría técnica</h2>
                         <p class="mt-6">
                             Nuestros consultores de desarrollo de software identifican objetivos comerciales, analizan
@@ -348,11 +353,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!---- PROYECTOS ---->
-    <div class="w-full px-6 pt-24 pb-12 sm:pt-32 bg-indigo-600">
+    <section class="w-full px-6 pt-24 pb-12 sm:pt-32 bg-indigo-600">
         <div class="lg:px-8">
             <div class="lg:max-w-lg xl:mx-auto">
                 <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl xl:text-center">Proyectos
@@ -396,10 +401,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!---- NUESTRO EQUIPO ---->
-    <div class="bg-white px-6 py-24 sm:py-32">
+    <section class="bg-white px-6 py-24 sm:py-32" id="nuestro_equipo">
         <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 lg:px-8 xl:grid-cols-3">
             <div class="lg:max-w-lg">
                 <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nuestro Equipo
@@ -485,15 +490,15 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
 
     <!---- FOOTER ---->
     <footer class="bg-gray-900 mx-auto w-full space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div class="lg:px-8">
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 fotter_letra">
                 <div>
-                    <div class="text-teal-600 dark:text-teal-300">
+                    <div class="text-teal-300">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3995.73 4001.38">
                             <defs>
                                 <style>
@@ -529,7 +534,7 @@
                         </svg>
                     </div>
 
-                    <p class="mt-4 max-w-xs text-gray-500 dark:text-gray-400">
+                    <p class="mt-4 max-w-xs text-gray-200">
                         Dirección: C201 ESTE05 COSTA RICA
                         Email: nettside.leticia@gmail.com
                     </p>
@@ -657,63 +662,53 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-3">
                     <div>
-                        <p class="font-medium text-gray-900 dark:text-white">Servicios</p>
+                        <p class="font-medium text-white encabezado_link">Servicios</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#empresa" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#empresa" class="transition hover:opacity-75 text-gray-200">
                                     Automizacion de procesos
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#diseño_web"
-                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#diseño_web" class="transition hover:opacity-75 text-gray-200">
                                     Paginas webp dinamicas
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#diseño_web"
-                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#diseño_web" class="transition hover:opacity-75 text-gray-200">
                                     Paginas webp estaticas
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#aplicaciones"
-                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#aplicaciones" class="transition hover:opacity-75 text-gray-200">
                                     Software a la medida
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-
                                 </a>
                             </li>
                         </ul>
                     </div>
 
                     <div>
-                        <p class="font-medium text-gray-900 dark:text-white">Compañia</p>
+                        <p class="font-medium text-white encabezado_link">Compañia</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#sobre_nosotros"
-                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#sobre_nosotros" class="transition hover:opacity-75 text-gray-200">
                                     Sobre Nosotros
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#" class="transition hover:opacity-75 text-gray-200">
                                     Nuestro equipo
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#" class="transition hover:opacity-75 text-gray-200">
 
                                 </a>
                             </li>
@@ -721,23 +716,23 @@
                     </div>
 
                     <div>
-                        <p class="font-medium text-gray-900 dark:text-white">Proyectos</p>
+                        <p class="font-medium text-white encabezado_link">Proyectos</p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#" class="transition hover:opacity-75 text-gray-200">
                                     Gestion de Hoteleria
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#" class="transition hover:opacity-75 text-gray-200">
 
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                <a href="#" class="transition hover:opacity-75 text-gray-200">
 
                                 </a>
                             </li>
@@ -786,5 +781,9 @@
 </body>
 
 <script src="./js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

@@ -8,7 +8,7 @@
 /* Estilo para cuando el encabezado se desplaza hacia abajo */
 .header-scrolled {
     background-color: rgba(255, 255, 255, 0.897);
-    backdrop-filter: saturate(1.8) blur(20px);
+    backdrop-filter: saturate(1.8) blur(3px);
     padding-block: 1.2rem;
     transition: all .4s ease-in-out
 }
@@ -63,7 +63,7 @@
   }
 
   .bar.open-3 {
-    transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
   }
 
   .menu {
@@ -90,17 +90,21 @@
   }
   .menu.active {
     display: flex;
-    background: #000000e8;
+    background: #000000d4;
     width: 100%;
     height: auto;
-    padding: 40px 100px 10px 100px;
+    padding: 40px 100px 40px 100px;
     border-radius: 5px;
   }
 }
-.enlace_mobile{
-  color: #fff !important;
-  border-bottom: 1px solid #fff;
+.enlace_mobile .activado {
+  color: yellow; /* Color para el enlace activo */
 }
+.enlace_mobile{
+  color: #ffffff !important;
+  font-size: 17px;
+}
+
 .menu-btn{
   position: fixed;
   right: 15px;
@@ -124,4 +128,7 @@
   position: absolute;
   background: linear-gradient(297deg, rgba(16, 7, 28, 0.13) 0%, rgba(16, 7, 39, 0.87) 52%, rgb(16, 7, 39) 100%);
   inset: 0px;
+}
+.encabezado_link {
+  color: #fefefe !important;
 }

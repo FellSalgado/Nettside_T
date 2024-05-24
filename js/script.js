@@ -4,48 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = currentYear;
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.enlace_mobile'); // Todos los enlaces del navbar
-    const sections = []; // Array para almacenar las secciones
-
-    // Obtener todas las secciones por sus identificadores
-    navLinks.forEach((link) => {
-        const section = document.querySelector(link.getAttribute('href')); // Obtener la sección por el href
-        if (section) {
-            sections.push({
-                link: link,
-                section: section,
-                offsetTop: section.offsetTop, // Ubicación de la sección en la página
-            });
-        }
-    });
-
-    // Función para actualizar el enlace activo según la posición de desplazamiento
-    function updateActiveLink() {
-        const scrollPosition = window.scrollY + 10; // Compensar ligeramente el desplazamiento
-
-        sections.forEach((sectionObj) => {
-            if (
-                scrollPosition >= sectionObj.offsetTop &&
-                scrollPosition <
-                    sectionObj.offsetTop + sectionObj.section.offsetHeight
-            ) {
-                // Si el usuario está en esta sección, activa el enlace correspondiente
-                sectionObj.link.classList.add('activado');
-            } else {
-                // Si no, elimina la clase 'active'
-                sectionObj.link.classList.remove('activado');
-            }
-        });
-    }
-
-    // Escuchar el evento de desplazamiento
-    window.addEventListener('scroll', updateActiveLink);
-
-    // Inicializa para establecer el enlace activo cuando se carga la página
-    updateActiveLink();
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector(
         '#mainHeader .block.md\\:hidden button'

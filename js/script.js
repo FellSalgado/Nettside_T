@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
 });
-
+/* 
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector(
         '#mainHeader .block.md\\:hidden button'
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
         header.classList.toggle('open');
     });
-});
+}); */
 
 // Obtén el encabezado
 const mainHeader = document.getElementById('mainHeader');

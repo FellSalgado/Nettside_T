@@ -2,7 +2,7 @@
 .header-top {
     background-color: rgba(0,0,0,0);
     padding-block: 2.5rem;
-    transition: all .4s ease-in-out
+    transition: all .4s ease-in-out;
 }
 
 /* Estilo para cuando el encabezado se desplaza hacia abajo */
@@ -96,6 +96,9 @@
     height: auto;
     padding: 40px 100px 40px 100px;
     border-radius: 5px;
+  }
+  .titulo  {
+    font-size: 40px !important;
   }
 }
 .enlace_mobile .activado {

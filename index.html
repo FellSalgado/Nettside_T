@@ -47,8 +47,8 @@
     <header id="mainHeader" class="w-full fixed header-top z-50">
         <div class="mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-8">
             <div class="flex h-18 items-center justify-between lg:px-8">
-                <div class="flex-1 md:flex md:items-center md:gap-12">
-                    <a class="block text-teal-600" href="#">
+                <div class="flex-1 md:flex md:items-center gap-4">
+                    <a class="block" href="#">
                         <span class="sr-only">Home</span>
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3995.73 4001.38">
                             <defs>
@@ -84,6 +84,7 @@
                             </g>
                         </svg>
                     </a>
+                    <span class="font-bold">Nettside</span>
                 </div>
 
                 <div class="md:flex md:items-center md:gap-12">
@@ -147,28 +148,25 @@
     </header>
 
     <!---- PORTADA ---->
-    <div class="relative isolate px-6 bg-gray-900 text-white portada h-screen">
+    <div class="relative isolate px-6 bg-gray-900 text-white h-screen flex items-center justify-center">
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover -z-10">
             <source src="https://cdn.sanity.io/files/s7xbv9bz/production/521716f9329e2521e8d8fe6b0490bf3d3024543d.webm"
                 type="video/mp4">
         </video>
         <div class="Videofondo absolute inset-0 w-full h-full object-cover -z-10" controls aria-label="Video de fondo">
         </div>
-        <div class="mx-auto max-w-2xl pt-32 sm:pt-48">
-            <div class="text-center">
-                <h1 class="pt-8 font-bold tracking-tight text-6xl">Llevando la presencia
-                    digital al siguiente nivel</h1>
-                <p class="mt-8 text-lg leading-8">Cree soluciones de software escalables y preparadas para el futuro con
-                    nuestros equipos ágiles, que impulsen la innovación y el éxito sostenible de su negocio en el
-                    mercado competitivo.
-                </p>
-            </div>
+        <div class=" mx-auto max-w-2xl text-center">
+            <h1 class="font-bold text-6xl titulo">Llevando la presencia
+                digital al siguiente nivel</h1>
+            <p class="mt-8 text-lg leading-8">Cree soluciones de software escalables y preparadas para el futuro con
+                nuestros equipos ágiles, que impulsen la innovación y el éxito sostenible de su negocio en el
+                mercado competitivo.
+            </p>
         </div>
     </div>
 
-
     <!---- SOBRE NOSOTROS ---->
-    <section class="relative isolate overflow-hidden bg-white px-6 pt-24 sm:pt-32 lg:overflow-visible lg:px-8"
+    <section class="relative isolate overflow-hidden bg-white px-6 pt-20 sm:pt-32 lg:overflow-visible lg:px-8"
         id="sobre_nosotros">
         <div class=" absolute inset-0 -z-10 overflow-hidden">
             <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -188,7 +186,7 @@
             </svg>
         </div>
         <div
-            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
             <div
                 class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div class="lg:pr-4">
@@ -350,8 +348,8 @@
                 <div class="lg:pr-4">
                     <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg" data-aos="fade-up"
                         data-aos-duration="800">
-                        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Consultoría técnica</h2>
-                        <p class="mt-6">
+                        <h2 class="text-2xl font-bold tracking-tight text-gray-900">Consultoría técnica</h2>
+                        <p class="mt-6 mb-8">
                             Nuestros consultores de desarrollo de software identifican objetivos comerciales, analizan
                             inversiones y sistemas existentes, y crean una hoja de ruta para servicios de monitoreo y
                             entrega de software. Como socio digital confiable, planificamos y ofrecemos soluciones
@@ -365,7 +363,7 @@
     </section>
 
     <!--COMO TRABAJAMOS-->
-    <section class="w-full px-6 pt-24 pb-12 sm:pt-32 bg-indigo-600">
+    <section class="w-full px-6 pt-20 pb-12 sm:pt-32 bg-indigo-600">
         <div class="lg:px-8">
             <div class="lg:max-w-lg xl:mx-auto">
                 <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl xl:text-center">Cómo trabajamos
